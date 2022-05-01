@@ -31,7 +31,7 @@ public class CabasController {
 
     @GetMapping("/sendAlert")
     public String sendAlert(@ModelAttribute("areaId") int id, @ModelAttribute("severity") String level) {
-        alertMessage.message1(id, level);
+        alertMessage.message(id, level);
         return "redirect:/";
     }
 }
